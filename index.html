@@ -1,10 +1,11 @@
-<!DOCTYPE html>
+TabelasFormulários<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css" class="cs">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" class="css">
+    <link rel="icon" href="favicon/html5.png" type="image/png">
+    <title>HTML 5 - Guide</title>
 </head>
 <body>
     <nav id="navbar">
@@ -12,87 +13,596 @@
             <img id="html-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/512px-HTML5_Badge.svg.png?20110131171049" alt="HTML 5 LOGO"/>
             <header id="nav-header" class="nav-header">HTML5</header>
         </div>    
-        <a href="#Topic_1" class="nav-link">Topic 1</a>
-        <a href="#Topic_2" class="nav-link">Topic 2</a>
-        <a href="#Topic_3" class="nav-link">Topic 3</a>
-        <a href="#Topic_4" class="nav-link">Topic 4</a>
-        <a href="#Topic_5" class="nav-link">Topic 5</a>
-        <a href="#Topic_6" class="nav-link">Topic 6</a>
+        <a href="#Estrutura_Básica_do_HTML" id="nav-link" class="nav-link">Estrutura Básica do HTML</a>
+        <a href="#Tags_de_Texto" id="nav-link" class="nav-link">Tags de Texto</a>
+        <a href="#Listas" id="nav-link" class="nav-link">Listas</a>
+        <a href="#Links_e_Âncoras" id="nav-link" class="nav-link">Links e Âncoras</a>
+        <a href="#Imagens" id="nav-link" class="nav-link">Imagens</a>
+        <a href="#Formulários" id="nav-link" class="nav-link">Formulários</a>
+        <a href="#Tabelas" id="nav-link" class="nav-link">Tabelas</a>
+        <a href="#Elementos_Semânticos" id="nav-link" class="nav-link">Elementos Semânticos</a>
+        <a href="#Comentários_em_HTML" id="nav-link" class="nav-link">Comentários em HTML</a>
+        <a href="#HTML_Semântico" id="nav-link" class="nav-link">HTML Semântico</a>
+        <a href="#Meta_Tags" id="nav-link" class="nav-link">Meta Tags</a>
+        <a href="#Validação_HTML" id="nav-link" class="nav-link">Validação HTML</a>
+        <a href="#Elementos_de_Mídia" id="nav-link" class="nav-link">Elementos de Mídia</a>
+        <a href="#HTML5_APIs" id="nav-link" class="nav-link">HTML5 APIs</a>
+        <a href="#HTML5_Canvas" id="nav-link" class="nav-link">HTML5 Canvas</a>
+        <a href="#SVG_(Scalable_Vector_Graphics)" id="nav-link" class="nav-link">SVG (Scalable Vector Graphics)</a>
+        <a href="#HTML_Boilerplate" id="nav-link" class="nav-link">HTML Boilerplate</a>
+        <a href="#Tecnologias_Relacionadas" id="nav-link" class="nav-link last-a">Tecnologias Relacionadas</a>
       </nav>
      <main id="main-doc" class="main-doc">
-        <section class="main-section" id="Topic_1">
-            <header id="section-header">Topic 1</header>
-            <p>Conteúdo vai vir aqui</p>
-            <p>Conteúdo vai vir aqui</p>
-            <li>
-                <ul>Informação aqui</ul>
-                <ul>Aqui também</ul>
-                <ul>E mais informação aqui</ul>
-            </li>
-            <code>
-                'DOCTYPE html é o começo de tudo'
-            </code>
+
+        <section class="main-section first-section" id="Estrutura_Básica_do_HTML">
+            <header id="Estrutura_basica_do_HTML">Estrutura Básica do HTML</header>
+            
+            <p>
+                O HTML (Hypertext Markup Language) é a linguagem de marcação padrão para a criação de páginas web.
+            </p>
+        
+            <p>
+                A estrutura básica de um documento HTML inclui as seguintes tags principais:
+            </p>
+        
+            <ul>
+                <li><code>&lt;!DOCTYPE html&gt;</code>: Define a versão do HTML utilizada e inicia o documento HTML.</li>
+                <li><code>&lt;html&gt;</code>: Define o elemento raiz de um documento HTML.</li>
+                <li><code>&lt;head&gt;</code>: Contém metadados e informações sobre o documento HTML.</li>
+                <li><code>&lt;meta&gt;</code>: Fornece metadados sobre o documento HTML, como a codificação de caracteres, a viewport e outros.</li>
+                <li><code>&lt;title&gt;</code>: Define o título do documento que aparece na barra de título do navegador.</li>
+                <li><code>&lt;body&gt;</code>: Contém o conteúdo visível do documento HTML.</li>
+            </ul>
+        
+            <p>
+                Essas tags fornecem a estrutura básica para criar uma página web e definir seu conteúdo e metadados.
+            </p>
         </section>
 
-        <section class="main-section" id="Topic_2">
-            <header id="section-header">Topic 2</header>
-            <p>Conteúdo vai vir aqui</p>
-            <p>Conteúdo vai vir aqui</p>
-            <code>
-                'DOCTYPE html é o começo de tudo'
-            </code>
-            <li>
-                <ul>Informação aqui</ul>
-                <ul>Aqui também</ul>
-                <ul>E mais informação aqui</ul>
-            </li>
+        <section class="main-section" id="Tags_de_Texto">
+            <header id="Tags_de_Texto">
+                Tags de Texto
+            </header>
+            
+            <p>
+                No HTML, existem diversas tags para representar diferentes tipos de texto.
+            </p>
+        
+            <p>
+                Alguns exemplos de tags de texto incluem:
+            </p>
+        
+            <ul>
+                <li><code>&lt;h1&gt;</code> a <code>&lt;h6&gt;</code>: Definem títulos de diferentes níveis de importância.</li>
+                <li><code>&lt;p&gt;</code>: Define um parágrafo de texto.</li>
+                <li><code>&lt;strong&gt;</code>: Define um texto importante ou enfatizado, geralmente exibido em negrito.</li>
+                <li><code>&lt;em&gt;</code>: Define um texto enfatizado, geralmente exibido em itálico.</li>
+                <li><code>&lt;span&gt;</code>: Define uma pequena seção de texto comum, útil para aplicação de estilos ou manipulação com JavaScript.</li>
+                <li><code>&lt;pre&gt;</code>: Define um texto pré-formatado, preservando espaços em branco e quebras de linha.</li>
+                <li><code>&lt;blockquote&gt;</code>: Define uma seção de texto citado de outra fonte.</li>
+                <li><code>&lt;abbr&gt;</code>: Define uma abreviação ou acrônimo.</li>
+            </ul>
+        
+            <p>
+                Essas tags permitem estruturar e formatar o conteúdo textual de uma página HTML de forma semântica e acessível.
+            </p>
+        </section>
+        
+        <section class="main-section" id="Listas">
+            <header id="Listas">
+                Listas
+            </header>
+            
+            <p>
+                As listas são uma parte importante da marcação em HTML e são usadas para organizar informações de forma ordenada ou não ordenada.
+            </p>
+        
+            <p>
+                Existem três tipos principais de listas em HTML:
+            </p>
+        
+            <ul>
+                <li><strong>Listas não ordenadas:</strong> Criadas com a tag <code>&lt;ul&gt;</code>. Os itens da lista são marcados com a tag <code>&lt;li&gt;</code> e não são ordenados de forma específica.</li>
+                <li><strong>Listas ordenadas:</strong> Criadas com a tag <code>&lt;ol&gt;</code>. Os itens da lista são marcados com a tag <code>&lt;li&gt;</code> e são ordenados numericamente ou alfabeticamente, dependendo do atributo.</li>
+                <li><strong>Listas de descrição:</strong> Criadas com a tag <code>&lt;dl&gt;</code> (definição de lista). Os itens da lista são marcados com <code>&lt;dt&gt;</code> (termo de definição) para o termo e <code>&lt;dd&gt;</code> (definição de descrição) para a descrição.</li>
+            </ul>
+        
+            <p>
+                Além disso, é possível aninhar listas dentro de outras listas para criar estruturas mais complexas.
+            </p>
+        
+            <p>
+                As listas são uma maneira eficaz de organizar informações e melhorar a acessibilidade e legibilidade do conteúdo em uma página web.
+            </p>
+        </section>
+        
+        <section class="main-section" id="Links_e_Âncoras">
+            <header id="Links_e_Âncoras">
+                Links e Âncoras
+            </header>
+            
+            <p>
+                Os links e âncoras são fundamentais para a navegação e interatividade em páginas web.
+            </p>
+        
+            <p>
+                Em HTML, os links são criados com a tag <code>&lt;a&gt;</code>, onde o atributo <code>href</code> especifica o destino do link.
+            </p>
+        
+            <p>
+                Exemplo de um link simples:
+            </p>
+        
+            <code>&lt;a href="https://www.exemplo.com"&gt;Texto do Link&lt;/a&gt;</code>
+        
+            <p>
+                Além disso, as âncoras são usadas para criar links internos em uma página web.
+            </p>
+        
+            <p>
+                Para criar uma âncora, usamos a tag <code>&lt;a&gt;</code> com o atributo <code>href</code> apontando para o ID do elemento que desejamos vincular.
+            </p>
+        
+            <p>
+                Exemplo de uma âncora:
+            </p>
+        
+            <code>&lt;a href="#secao1"&gt;Ir para a Seção 1&lt;/a&gt;</code>
+        
+            <p>
+                Quando o usuário clica em um link, ele é direcionado para o local da página especificado pelo valor do atributo <code>href</code>. 
+            </p>
+        
+            <p>
+                Os links e âncoras são componentes essenciais para a usabilidade e navegabilidade das páginas web.
+            </p>
+        </section>
+        
+        <section class="main-section" id="Imagens">
+            <header id="Imagens">
+                Imagens
+            </header>
+            
+            <p>
+                As imagens são elementos essenciais para enriquecer o conteúdo visual das páginas web.
+            </p>
+        
+            <p>
+                Em HTML, as imagens são inseridas usando a tag <code>&lt;img&gt;</code>, que é uma tag vazia, o que significa que não possui uma tag de fechamento.
+            </p>
+        
+            <p>
+                A tag <code>&lt;img&gt;</code> requer o atributo <code>src</code>, que especifica o caminho para a imagem, ou seja, a localização do arquivo de imagem.
+            </p>
+        
+            <p>
+                Exemplo de inserção de imagem:
+            </p>
+        
+            <code>&lt;img src="caminho/para/imagem.jpg" alt="Descrição da imagem"&gt;</code>
+        
+            <ul>
+                <li>O atributo <code>src</code> define o caminho para a imagem.</li>
+                <li>O atributo <code>alt</code> fornece um texto alternativo para a imagem, importante para acessibilidade e para descrever a imagem caso ela não seja carregada corretamente.</li>
+            </ul>
+        
+            <p>
+                Além disso, é possível definir outras propriedades para a tag <code>&lt;img&gt;</code>, como largura (<code>width</code>) e altura (<code>height</code>), para controlar as dimensões da imagem.
+            </p>
+        
+            <p>
+                As imagens são elementos poderosos para transmitir informações visuais e melhorar a experiência do usuário em uma página web.
+            </p>
         </section>
 
-        <section class="main-section" id="Topic_3">
-            <header id="section-header">Topic 3</header>
-            <p>Conteúdo vai vir aqui</p>
-            <p>Conteúdo vai vir aqui</p>
-            <li>
-                <ul>Informação aqui</ul>
-                <ul>Aqui também</ul>
-                <ul>E mais informação aqui</ul>
-            </li>
+        <section class="main-section" id="Formulários">
+            <header id="Formulários">
+                Formulários
+            </header>
+            
+            <p>
+                Os formulários são elementos cruciais em páginas web, permitindo aos usuários interagirem e enviarem dados para o servidor.
+            </p>
+        
+            <p>
+                Em HTML, os formulários são criados usando a tag <code>&lt;form&gt;</code>.
+            </p>
+        
+            <p>
+                Exemplo de um formulário simples:
+            </p>
+        
+            <pre>
+        &lt;form action="/processar_dados" method="post"&gt;
+            &lt;label for="nome"&gt;Nome:&lt;/label&gt;
+            &lt;input type="text" id="nome" name="nome"&gt;&lt;br&gt;
+        
+            &lt;label for="email"&gt;Email:&lt;/label&gt;
+            &lt;input type="email" id="email" name="email"&gt;&lt;br&gt;
+        
+            &lt;input type="submit" value="Enviar"&gt;
+        &lt;/form&gt;
+            </pre>
+        
+            <p>
+                Os elementos mais comuns dentro de um formulário incluem:
+            </p>
+        
+            <ul>
+                <li><code>&lt;input&gt;</code>: Utilizado para a maioria dos controles de entrada, como campos de texto, caixas de seleção, botões de rádio e botões de envio.</li>
+                <li><code>&lt;textarea&gt;</code>: Usado para áreas de texto multi-linha.</li>
+                <li><code>&lt;select&gt;</code>: Cria uma lista suspensa de opções.</li>
+                <li><code>&lt;button&gt;</code>: Usado para botões de envio personalizados.</li>
+            </ul>
+        
+            <p>
+                Além disso, os formulários usam os atributos <code>action</code> e <code>method</code> para especificar para onde os dados do formulário devem ser enviados e o método HTTP a ser usado (GET ou POST).
+            </p>
+        
+            <p>
+                Os formulários são uma parte vital da interação do usuário em páginas web, permitindo a coleta e processamento de informações.
+            </p>
+        </section>
+        
+        <section class="main-section" id="Tabelas">
+            <header id="Tabelas">
+                Tabelas
+            </header>
+            
+            <p>
+                As tabelas são usadas em HTML para exibir dados em linhas e colunas organizadas.
+            </p>
+        
+            <p>
+                Em HTML, as tabelas são criadas usando as tags <code>&lt;table&gt;</code> para definir a tabela em si, <code>&lt;tr&gt;</code> para as linhas da tabela, <code>&lt;th&gt;</code> para os cabeçalhos das colunas e <code>&lt;td&gt;</code> para os dados das células.
+            </p>
+        
+            <p>
+                Exemplo de uma tabela simples:
+            </p>
+        
+            <pre>
+        &lt;table&gt;
+            &lt;tr&gt;
+                &lt;th&gt;Nome&lt;/th&gt;
+                &lt;th&gt;Idade&lt;/th&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;João&lt;/td&gt;
+                &lt;td&gt;25&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Maria&lt;/td&gt;
+                &lt;td&gt;30&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/table&gt;
+            </pre>
+        
+            <p>
+                As tabelas podem ser estilizadas usando CSS para melhorar a aparência e a legibilidade.
+            </p>
+        
+            <p>
+                É importante usar tabelas apenas para dados tabulares, evitando seu uso para layout de página, já que isso pode prejudicar a acessibilidade e a responsividade.
+            </p>
+        
+            <p>
+                As tabelas são uma maneira eficaz de organizar e apresentar dados de forma estruturada em páginas web.
+            </p>
+        </section>
+        
+        <section class="main-section" id="Elementos_Semânticos">
+            <header id="Elementos_Semânticos">
+                Elementos Semânticos
+            </header>
+            
+            <p>
+                Os elementos semânticos em HTML são aqueles que atribuem significado estrutural ao conteúdo, ajudando os navegadores, mecanismos de busca e usuários a entenderem melhor a página.
+            </p>
+        
+            <p>
+                Alguns dos elementos semânticos mais comuns incluem:
+            </p>
+        
+            <ul>
+                <li><code>&lt;header&gt;</code>: Define o cabeçalho de um documento ou de uma seção.</li>
+                <li><code>&lt;nav&gt;</code>: Define uma seção de navegação.</li>
+                <li><code>&lt;main&gt;</code>: Define o conteúdo principal ou central de um documento.</li>
+                <li><code>&lt;article&gt;</code>: Define um conteúdo autônomo que pode ser distribuído e reutilizado separadamente.</li>
+                <li><code>&lt;section&gt;</code>: Define uma seção em um documento.</li>
+                <li><code>&lt;aside&gt;</code>: Define conteúdo à parte do conteúdo principal da página.</li>
+                <li><code>&lt;footer&gt;</code>: Define o rodapé de um documento ou de uma seção.</li>
+            </ul>
+        
+            <p>
+                Esses elementos não apenas estruturam o conteúdo da página de forma mais clara, mas também ajudam na acessibilidade e na indexação por mecanismos de busca.
+            </p>
+        
+            <p>
+                Ao utilizar elementos semânticos, é possível criar páginas web mais legíveis, acessíveis e compreensíveis para todos os usuários.
+            </p>
+        </section>
+        
+        <section class="main-section" id="Comentários_em_HTML">
+            <header id="Comentários_em_HTML">
+                Comentários em HTML
+            </header>
+            
+            <p>
+                Os comentários em HTML são utilizados para inserir notas ou informações no código que não são exibidas no navegador, mas podem ser úteis para os desenvolvedores durante a manutenção do código.
+            </p>
+        
+            <p>
+                Em HTML, os comentários são inseridos entre as tags <code>&lt;!--</code> e <code>--&gt;</code>.
+            </p>
+        
+            <p>
+                Exemplo de um comentário em HTML:
+            </p>
+        
+            <code>&lt;!-- Este é um comentário em HTML. Ele não será exibido no navegador. --&gt;</code>
+        
+            <p>
+                Os comentários são úteis para documentar o código, explicar partes complicadas ou fornecer lembretes para futuras atualizações.
+            </p>
+        
+            <p>
+                No entanto, é importante não exagerar no uso de comentários e garantir que o código permaneça limpo e legível.
+            </p>
         </section>
 
-        <section class="main-section" id="Topic_4">
-            <header id="section-header">Topic 4</header>
-            <p>Conteúdo vai vir aqui</p>
-            <li>
-                <ul>Informação aqui</ul>
-                <ul>Aqui também</ul>
-                <ul>E mais informação aqui</ul>
-            </li>
-            <code>
-                'DOCTYPE html é o começo de tudo'
-            </code>
+        <section class="main-section" id="HTML_Semântico">
+            <header id="HTML_Semântico">
+                HTML Semântico
+            </header>
+            
+            <p>
+                O HTML semântico refere-se à prática de usar tags que tenham significado em vez de tags genéricas.
+            </p>
+        
+            <p>
+                Exemplo de elementos semânticos incluem:
+            </p>
+        
+            <ul>
+                <li><code>&lt;header&gt;</code>: Define o cabeçalho de um documento ou de uma seção.</li>
+                <li><code>&lt;nav&gt;</code>: Define uma seção de navegação.</li>
+                <li><code>&lt;main&gt;</code>: Define o conteúdo principal ou central de um documento.</li>
+                <li><code>&lt;article&gt;</code>: Define um conteúdo autônomo que pode ser distribuído e reutilizado separadamente.</li>
+                <li><code>&lt;section&gt;</code>: Define uma seção em um documento.</li>
+                <li><code>&lt;footer&gt;</code>: Define o rodapé de um documento ou de uma seção.</li>
+            </ul>
+        
+            <p>
+                Utilizar HTML semântico ajuda na acessibilidade, no SEO e na manutenção do código.
+            </p>
         </section>
 
-        <section class="main-section" id="Topic_5">
-            <header id="section-header">Topic 5</header>
-            <p>Conteúdo vai vir aqui</p>
-            <code>
-                'DOCTYPE html é o começo de tudo'
-            </code>
-            <code>
-                'DOCTYPE html é o começo de tudo'
-            </code>
+        <section class="main-section" id="Meta_Tags">
+            <header id="Meta_Tags">
+                Meta Tags
+            </header>
+            
+            <p>
+                As meta tags em HTML fornecem informações sobre a página da web.
+            </p>
+        
+            <p>
+                Alguns exemplos comuns de meta tags incluem:
+            </p>
+        
+            <ul>
+                <li><code>&lt;meta charset="UTF-8"&gt;</code>: Especifica a codificação de caracteres do documento.</li>
+                <li><code>&lt;meta name="description" content="Descrição da página"&gt;</code>: Fornece uma descrição da página para mecanismos de busca.</li>
+                <li><code>&lt;meta name="keywords" content="palavras-chave"&gt;</code>: Especifica palavras-chave relacionadas ao conteúdo da página.</li>
+                <li><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code>: Controla a largura da viewport e a escala inicial.</li>
+            </ul>
+        
+            <p>
+                Utilizar meta tags apropriadas ajuda na indexação pelos mecanismos de busca e na apresentação da página em dispositivos diversos.
+            </p>
         </section>
 
-        <section class="main-section" id="Topic_6">
-            <header id="section-header">Topic 6</header>
-            <li>
-                <ul>Informação aqui</ul>
-                <ul>Aqui também</ul>
-                <ul>E mais informação aqui</ul>
-            </li>
-            <p>Conteúdo vai vir aqui</p>
-            <p>Conteúdo vai vir aqui</p>
+        <section class="main-section" id="Validação_HTML">
+            <header id="Validação_HTML">
+                Validação HTML
+            </header>
+            
+            <p>
+                A validação HTML é o processo de verificação se um documento HTML está em conformidade com os padrões estabelecidos pela W3C.
+            </p>
+        
+            <p>
+                Existem várias ferramentas online e offline que podem ser usadas para validar documentos HTML.
+            </p>
+        
+            <p>
+                A validação HTML ajuda a identificar erros de sintaxe, problemas de acessibilidade e inconsistências no código.
+            </p>
+        
+            <p>
+                Garantir que o código HTML seja válido contribui para a compatibilidade entre navegadores, a acessibilidade e a manutenção do código.
+            </p>
         </section>
+
+        <section class="main-section" id="Elementos_de_Mídia">
+            <header id="Elementos_de_Mídia">
+                Elementos de Mídia
+            </header>
+            
+            <p>
+                Os elementos de mídia em HTML permitem incorporar e exibir diferentes tipos de mídia, como áudio e vídeo, em páginas web.
+            </p>
+        
+            <p>
+                Exemplos de elementos de mídia incluem:
+            </p>
+        
+            <ul>
+                <li><code>&lt;audio&gt;</code>: Para reprodução de arquivos de áudio.</li>
+                <li><code>&lt;video&gt;</code>: Para reprodução de arquivos de vídeo.</li>
+                <li><code>&lt;img&gt;</code>: Para exibição de imagens.</li>
+            </ul>
+        
+            <p>
+                Utilize esses elementos para enriquecer a experiência do usuário em suas páginas web com conteúdo multimídia.
+            </p>
+        </section>
+
+        <section class="main-section" id="HTML5_APIs">
+            <header id="HTML5_APIs">
+                HTML5 APIs
+            </header>
+            
+            <p>
+                As HTML5 APIs são interfaces de programação de aplicativos que permitem interações avançadas e recursos em páginas web.
+            </p>
+        
+            <p>
+                Algumas das HTML5 APIs mais comuns incluem:
+            </p>
+        
+            <ul>
+                <li>Geolocation API: Permite que os navegadores obtenham a localização do usuário.</li>
+                <li>Web Storage API: Fornece armazenamento local no navegador.</li>
+                <li>Canvas API: Permite a criação de gráficos dinâmicos e renderização de gráficos.</li>
+                <li>Web Workers API: Possibilita a execução de scripts em segundo plano.</li>
+            </ul>
+        
+            <p>
+                As HTML5 APIs oferecem recursos poderosos que podem ser utilizados para criar aplicativos web mais sofisticados e interativos.
+            </p>
+        </section>
+
+        <section class="main-section" id="HTML5_Canvas">
+            <header id="HTML5_Canvas">
+                HTML5 Canvas
+            </header>
+            
+            <p>
+                O HTML5 Canvas é uma API que permite desenhar gráficos e animações de forma dinâmica em páginas web.
+            </p>
+        
+            <p>
+                Com o Canvas, você pode desenhar formas, linhas, texto e imagens diretamente no navegador usando JavaScript.
+            </p>
+        
+            <p>
+                Exemplo de uso do Canvas:
+            </p>
+        
+            <pre>
+        &lt;canvas id="myCanvas" width="200" height="100"&gt;
+            &lt;p&gt;Seu navegador não suporta o elemento Canvas.&lt;/p&gt;
+        &lt;/canvas&gt;
+            </pre>
+        
+            <p>
+                Use o Canvas para criar visualizações interativas, jogos e gráficos dinâmicos em suas páginas web.
+            </p>
+        </section>
+
+        <section class="main-section" id="SVG_(Scalable_Vector_Graphics)">
+            <header id="SVG_(Scalable_Vector_Graphics)">
+                SVG (Scalable Vector Graphics)
+            </header>
+            
+            <p>
+                SVG é um formato de imagem baseado em XML que permite criar gráficos vetoriais escaláveis.
+            </p>
+        
+            <p>
+                Em HTML, você pode incorporar imagens SVG usando a tag <code>&lt;svg&gt;</code>.
+            </p>
+        
+            <p>
+                Exemplo de um SVG simples:
+            </p>
+        
+            <pre>
+        &lt;svg width="100" height="100"&gt;
+            &lt;circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" /&gt;
+        &lt;/svg&gt;
+            </pre>
+        
+            <p>
+                Use SVG para criar gráficos, ícones e ilustrações escaláveis e de alta qualidade em suas páginas web.
+            </p>
+        </section>
+
+        <section class="main-section" id="HTML_Boilerplate">
+            <header id="HTML_Boilerplate">
+                HTML Boilerplate
+            </header>
+            
+            <p>
+                Um HTML Boilerplate é um modelo inicial de código HTML que fornece uma estrutura básica para iniciar projetos web.
+            </p>
+        
+            <p>
+                Exemplo de um HTML Boilerplate básico:
+            </p>
+        
+            <pre>
+        &lt;!DOCTYPE html&gt;
+        &lt;html lang="en"&gt;
+        &lt;head&gt;
+            &lt;meta charset="UTF-8"&gt;
+            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+            &lt;title&gt;Título da Página&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;header&gt;
+                &lt;h1&gt;Título Principal&lt;/h1&gt;
+            &lt;/header&gt;
+            &lt;nav&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Link 1&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Link 2&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Link 3&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/nav&gt;
+            &lt;main&gt;
+                &lt;p&gt;Conteúdo Principal&lt;/p&gt;
+            &lt;/main&gt;
+            &lt;footer&gt;
+                &lt;p&gt;Rodapé&lt;/p&gt;
+            &lt;/footer&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+            </pre>
+        
+            <p>
+                HTML Boilerplates são úteis para padronizar a estrutura inicial de um projeto e economizar tempo no desenvolvimento.
+            </p>
+        </section>
+        
+        <section class="main-section" id="Tecnologias_Relacionadas">
+            <header id="Tecnologias_Relacionadas">
+                Tecnologias Relacionadas
+            </header>
+            
+            <p>
+                Existem várias tecnologias e ferramentas relacionadas ao HTML que são comumente usadas no desenvolvimento web.
+            </p>
+        
+            <p>
+                Algumas dessas tecnologias incluem:
+            </p>
+        
+            <ul>
+                <li>CSS (Cascading Style Sheets): Utilizado para estilizar e formatar elementos HTML em uma página web.</li>
+                <li>JavaScript: Uma linguagem de programação usada para criar interatividade e dinamismo em páginas web.</li>
+                <li>Frameworks CSS como Bootstrap, Foundation, e Materialize: Oferecem conjuntos de estilos predefinidos e componentes para facilitar o desenvolvimento web responsivo e moderno.</li>
+                <li>React, Angular, Vue.js: Frameworks JavaScript que facilitam a criação de interfaces de usuário interativas e dinâmicas.</li>
+                <li>PHP, Node.js: Tecnologias para desenvolvimento de servidor que podem ser usadas para criar páginas web dinâmicas e interativas.</li>
+            </ul>
+        
+            <p>
+                Essas tecnologias complementam o HTML e são essenciais para a criação de páginas web modernas e funcionais.
+            </p>
+        </section>
+        
      </main>
 </body>
 </html>
